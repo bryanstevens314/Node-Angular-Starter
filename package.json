@@ -2,9 +2,16 @@
   "name": "angular-chess",
   "version": "0.0.0",
   "scripts": {
+    "watch": "watch 'npm run build' src",
+    "build": "cd src && NODE_ENV='development' ng build && open http://localhost:8080",
+    "server": "cd src/server && NODE_ENV='development' nodemon server || true",
+    "start-dev": "npm run watch & npm run server",
+    "start-prod": "NODE_ENV='production' ng build --prod && NODE_ENV='production' npm run server",
+    "create_repo": "heroku git:remote -a MovieList",
+    "pushto_repo": "git push heroku master",
+    "deploy": "create_repo && pushto_repo",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
