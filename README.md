@@ -1,10 +1,10 @@
 # AngularChess
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+Utilizes a Node server to serve a web application developed in Angular - 7.3.1. The server acts as an API allowing the web application to retrieve board state and available moves from a central location
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm run start-dev` for a dev server. Navigate to `http://localhost:8080`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
